@@ -1,3 +1,5 @@
+require 'readline'
+
 def load_config
   Skyline.load_config
 end
@@ -55,24 +57,17 @@ def icmd
     puts "the \"use\" command to select one."
     return nil
   end
-  exit = false
-  started = false
-  while !exit
-    if !started
-        puts "Entering interactive remote-terminal mode."
-        puts ""
-        puts "All entered commands are executed on all remote"
-        puts "instances within selected auto-scaling group."
-        puts ""
-        puts "Type \"exit\"\" or \"halt\"\" to exit IRT mode."
-        puts ""
-        started = true
-    end
-    print "irt$ "
-    input = STDIN.readline.strip
+  puts "Entering interactive remote-terminal mode."
+  puts ""
+  puts "All entered commands are executed on all remote"
+  puts "instances within selected auto-scaling group."
+  puts ""
+  puts "Type \"exit\" \"halt\" or press CTRL+D to exit."
+  puts ""
+  while input = Readline.readline("irt$ ", true)
     if !input.nil? && input != ""
       if input =~ /^exit|halt$/
-        exit = true
+        break
       else
         cmd(input)
       end
