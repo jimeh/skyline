@@ -2,7 +2,7 @@ require "skyline/skyline"
 require "skyline/console"
 
 load_config
-# init
+init
 
 puts <<-hd
 
