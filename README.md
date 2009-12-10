@@ -34,9 +34,7 @@ The pure basics are:
 
 ## Notes / Warnings
 
-* I created this tool in a hurry back in September to auto-scale a then fast growing Facebook application, and I haven't really touched it since. As such, it's not perfect, definitely has some bad code, and generally is far from perfect.
-
-  That said, it does work, and works very well. If there's something that can be done better, don't hesitate to fork and send me a pull request :)
+* I created this tool in a hurry back in September to auto-scale a then fast growing Facebook application, and I haven't really touched it since. As such, it's not perfect, definitely has some bad code, and generally is far from perfect. That said, it does work, and works very well. If there's something that can be done better, don't hesitate to fork and send me a pull request :)
 
 * This tool was originally mean to be used together with [Skyhook][skyhook]. But it's perfectly useful as a standalone tool.
 
