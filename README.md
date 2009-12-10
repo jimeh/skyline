@@ -22,9 +22,12 @@ If you're using a custom SSH key, define it in `skyline_config.yml`:
 
     ssh_key: ~/.ec2/kp_jimeh_default
 
-Run Skyline and it's help command:
+Run Skyline:
 
     ./skyline
+
+And it's help command:
+
     help_me
 
 The pure basics are:
