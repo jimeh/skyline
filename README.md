@@ -28,6 +28,7 @@ Run Skyline and it's help command:
     help_me
 
 The pure basics are:
+
 * Select an AutoScaling group with the `use` command
 * Use the `icmd` command to enter an interactive shell where everything you enter runs in parallel on all machines within selected AutoScaling group.
 
